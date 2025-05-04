@@ -1,0 +1,67 @@
+{{ 'component-hero-section.css' | asset_url | stylesheet_tag }}
+<section>
+    <div class="hero-section">
+        <div class="header-column">
+            <div class="header-content">
+                <h1 class="hero-title">{{ section.settings.hero_title }}</h1>
+                <p class="hero-subtitle">{{ section.settings.hero_subtitle }}</p>
+                <div class="button-container">
+                    <button>
+                        {{ section.settings.button_text }}
+                    </button>
+                    <button>
+                        {{ section.settings.button_text }}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-column">
+            <img src="{{ section.settings.hero_image | image_url: width: 1500 }}" alt="Hero Image" class="hero-image" />
+        </div>
+    </div>
+</section>
+
+
+{%  schema  %} 
+{
+    "name": "Hero Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "hero_title",
+            "label": "Hero Title",
+            "default": "Welcome to Our Store"
+        },
+        {
+            "type": "textarea",
+            "id": "hero_subtitle",
+            "label": "Hero Subtitle",
+            "default": "Discover amazing products at unbeatable prices!"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Shop Now"
+        },
+        {
+            "type": "text",
+            "id": "button_text_2",
+            "label": "Button Text",
+            "default": "Shop Now"
+        },
+        {
+            "type": "image_picker",
+            "id": "hero_image",
+            "label": "Hero Image"
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+            "name": "Hero Section",
+            "category": "Sections"
+        }
+    ]
+}
+{% endschema %}
