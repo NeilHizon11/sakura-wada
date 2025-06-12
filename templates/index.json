@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "hero_section_CUXKYk": {
       "type": "hero-section",
@@ -27,9 +27,9 @@
         "section_title": "<h2>A bath additive made with a rich blend of Japanese and Chinese herbs based on traditional Chinese medicine.</h2>",
         "section_subheading": "Enrich your daily bath time",
         "product_1": "onsen-diary",
-        "product_2": "onsen-diary",
-        "product_3": "onsen-diary",
-        "product_4": "onsen-diary"
+        "product_2": "nap-of-a-star",
+        "product_3": "hot-sriracha",
+        "product_4": "silky-flowers"
       }
     }
   },
