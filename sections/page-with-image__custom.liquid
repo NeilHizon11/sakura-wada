@@ -7,9 +7,13 @@
     gap: 20px;
   }
 
-  .page-with-image__image {
+    .page-with-image__image {
+        width: 976px;
+        max-height: 500px;
+        object-fit: cover;
+    }
 
-  }
+
 
   .page-with-image__content-container {
     max-width: 500px;
@@ -69,6 +73,12 @@
             "id": "button_url",
             "label": "Button URL",
             "default": "/"
+        },
+        {
+            "type": "text",
+            "id": "image_width",
+            "label": "Image Width (px)",
+            "default": "976",
         }
     ],
     "presets": [
