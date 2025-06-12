@@ -1,3 +1,7 @@
+.featured-products {
+    padding: 50px 0;
+}
+
 .productItem_wrapper {
     display: flex;
     gap: 10px;
