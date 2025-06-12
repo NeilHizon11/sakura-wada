@@ -8,7 +8,7 @@
   }
 
     .page-with-image__image {
-        width: 976px;
+        width: {{ section.settings.image_width | default: 976 }}px;
         max-height: 500px;
         object-fit: cover;
     }
