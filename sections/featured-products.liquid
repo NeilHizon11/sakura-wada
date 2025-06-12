@@ -1,5 +1,6 @@
+{{  'featured-products.css' | asset_url | stylesheet_tag }}
 <section id="{{section.id}}" class="featured-products">
-    <div class="page-width container">
+    <div class="page-width--wide container featured-products__container">
         <p class="featured-product__section-subheading">{{ section.settings.section_subheading }}</p>
         <h2 class="featured-product__section-title">{{ section.settings.section_title }}</h2>
         <div class="product-grid">
@@ -19,7 +20,7 @@
                   </a>
                 </div>
               {% endif %}
-            {% endfor %}
+            {% endfor %} 
           </div>
         </div>
     </div>

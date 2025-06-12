@@ -1,0 +1,19 @@
+.productItem_wrapper {
+    display: flex;
+}
+
+.featured-products__container {
+    align-items: center;    
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+}
+
