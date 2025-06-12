@@ -31,10 +31,22 @@
         "product_3": "hot-sriracha",
         "product_4": "silky-flowers"
       }
+    },
+    "page_with_image_custom_Ckq4yN": {
+      "type": "page-with-image__custom",
+      "name": "Page with Image Custom",
+      "settings": {
+        "image": "shopify://shop_images/HOTSRIRACHA_01_800x_7829ffdd-28ed-4ecc-b567-d4a2aafdd4ed.webp",
+        "heading": "Your Heading Here",
+        "text": "Your text goes here.",
+        "button_text": "Learn More",
+        "button_url": "/"
+      }
     }
   },
   "order": [
     "hero_section_CUXKYk",
-    "featured_products_LfB9yH"
+    "featured_products_LfB9yH",
+    "page_with_image_custom_Ckq4yN"
   ]
 }
