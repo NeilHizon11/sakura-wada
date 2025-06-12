@@ -1,3 +1,7 @@
+.featured-products {
+    padding: 50px 0;
+}
+
 .productItem_wrapper {
     display: flex;
     gap: 10px;
@@ -16,5 +20,21 @@
 .product-grid {
     display: flex;
     justify-content: center;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.product-item h3 {
+    text-transform: uppercase;
+}
+
+.product-item p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #6c6c6c;
 }
 
