@@ -18,3 +18,12 @@
     justify-content: center;
 }
 
+.product-item p {
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333;
+}
+
