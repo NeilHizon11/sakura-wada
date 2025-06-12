@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .featured-products {
     padding: 50px 0;
 }
@@ -38,3 +39,45 @@
     color: #6c6c6c;
 }
 
+=======
+.featured-products {
+    padding: 50px 0;
+}
+
+.productItem_wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.featured-products__container {
+    text-align: center;    
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 275px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.product-item h3 {
+    text-transform: uppercase;
+}
+
+.product-item p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #6c6c6c;
+}
+
+>>>>>>> 176fd78187b49d292cf0b8024953ae5c8e71449e
