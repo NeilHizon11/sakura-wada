@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "hero_section_CUXKYk": {
       "type": "hero-section",
@@ -27,14 +27,27 @@
         "section_title": "<h2>A bath additive made with a rich blend of Japanese and Chinese herbs based on traditional Chinese medicine.</h2>",
         "section_subheading": "Enrich your daily bath time",
         "product_1": "onsen-diary",
-        "product_2": "onsen-diary",
-        "product_3": "onsen-diary",
-        "product_4": "onsen-diary"
+        "product_2": "nap-of-a-star",
+        "product_3": "hot-sriracha",
+        "product_4": "silky-flowers"
+      }
+    },
+    "page_with_image_custom_Ckq4yN": {
+      "type": "page-with-image__custom",
+      "name": "Page with Image Custom",
+      "settings": {
+        "image": "shopify://shop_images/subscription_resize_1600_1200x_c907617c-d402-4fea-a1a4-731cef32b3f3.webp",
+        "heading": "<h2><strong>Great value subscription</strong></h2>",
+        "text": "SAKURA WADA offers a subscription option to make self-care a habit easier. You always get a 5% discount, free shipping, no minimum order, and you can freely change the frequency, skip, or change any other settings on your My Page.",
+        "button_text": "Read more...",
+        "button_url": "/",
+        "image_width": "900"
       }
     }
   },
   "order": [
     "hero_section_CUXKYk",
-    "featured_products_LfB9yH"
+    "featured_products_LfB9yH",
+    "page_with_image_custom_Ckq4yN"
   ]
 }
