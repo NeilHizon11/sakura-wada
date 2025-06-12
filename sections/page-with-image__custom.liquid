@@ -1,14 +1,4 @@
 {%  style %}
-  .page-with-image__image {
-    {% if section.settings.image %}
-      background-image: url({{ section.settings.image | image_url: width: 2048, height: 2048 }});
-    {% endif %}
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    width: 100%;
-  }
-
   .page-with-image__row {
     display: flex;
     flex-direction: row;
@@ -21,7 +11,9 @@
 <section id="page-with-image__uid--{{ section.id }}" class="page-with-image">
     <div class="container page-with-image__container">
         <div class="page-with-image__row">
-            <div class="page-with-image__image">But I am here tho</div>
+            <div class="page-with-image__image">
+                <img src="{{ section.settings.image | image_url: width: 2048, height: 2048 }}" alt="{{ section.settings.heading }}" class="page-with-image__image" />
+            </div>
 
             <div class="page-with-image__content">
                 <h2 class="page-with-image__heading">{{ section.settings.heading }}</h2>
