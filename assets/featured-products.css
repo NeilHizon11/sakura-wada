@@ -18,9 +18,12 @@
     justify-content: center;
 }
 
-.product-item p {
+.product-item a {
     text-decoration: none;
-    text-transform: uppercase;
+    color: #000;
+}
+
+.product-item p {
     width: 80%;
     margin: 0 auto;
     font-size: 14px;
