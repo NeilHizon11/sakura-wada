@@ -1,9 +1,10 @@
 .productItem_wrapper {
     display: flex;
+    gap: 10px;
 }
 
 .featured-products__container {
-    align-items: center;    
+    text-align: center;    
 }
 
 .product-item img {
