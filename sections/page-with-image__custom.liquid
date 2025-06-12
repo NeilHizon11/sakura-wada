@@ -1,8 +1,12 @@
 {%  style %}
   .page-with-image__image {
-    background-image: url({{ section.settings.image | image_url: width: 2048, height: 2048 }});
+    {% if section.settings.image %}
+      background-image: url({{ section.settings.image | image_url: width: 2048, height: 2048 }});
+    {% endif %}
     background-size: cover;
     background-position: center;
+    min-height: 400px;
+    width: 100%;
   }
 {% endstyle %}
 

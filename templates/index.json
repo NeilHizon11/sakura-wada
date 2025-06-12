@@ -37,7 +37,7 @@
       "name": "Page with Image Custom",
       "settings": {
         "image": "shopify://shop_images/HOTSRIRACHA_01_800x_7829ffdd-28ed-4ecc-b567-d4a2aafdd4ed.webp",
-        "heading": "Great value subscription",
+        "heading": "<h2><strong>Great value subscription</strong></h2>",
         "text": "SAKURA WADA offers a subscription option to make self-care a habit easier. You always get a 5% discount, free shipping, no minimum order, and you can freely change the frequency, skip, or change any other settings on your My Page.",
         "button_text": "Read more...",
         "button_url": "/"
