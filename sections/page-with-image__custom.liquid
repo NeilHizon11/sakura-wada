@@ -1,4 +1,25 @@
+{%  style %}
+  .page-with-image__image {
+    background-image: url({{ section.settings.image | img_url: '2048x2048' }});
+    background-size: cover;
+    background-position: center;
+  }
+{% endstyle %}
 
+
+<section id="page-with-image__uid--{{ section.id }}" class="page-with-image">
+    <div class="page-width--wide container page-with-image__container">
+        <div class="page-with-image__image">
+            
+        </div>
+
+        <div class="page-with-image__content">
+            <h2 class="page-with-image__heading">{{ section.settings.heading }}</h2>
+            <p class="page-with-image__text">{{ section.settings.text }}</p>
+            <a href="{{ section.settings.button_url }}" class="button page-with-image__button">{{ section.settings.button_text }}</a>
+        </div>
+    </div>
+</section>
 
 
 
