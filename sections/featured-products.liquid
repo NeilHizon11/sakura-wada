@@ -1,0 +1,73 @@
+{{  'featured-products.css' | asset_url | stylesheet_tag }}
+<section id="{{section.id}}" class="featured-products">
+    <div class="page-width--wide container featured-products__container">
+        <p class="featured-product__section-subheading">{{ section.settings.section_subheading }}</p>
+        <h2 class="featured-product__section-title">{{ section.settings.section_title }}</h2>
+        <div class="product-grid">
+          <div class="productItem_wrapper">
+            {% assign product_ids = "product_1,product_2,product_3,product_4" | split: "," %}
+            
+            {% for product_id in product_ids %}
+              {% assign product_handle = section.settings[product_id] %}
+              {% if product_handle %}
+                {% assign product_obj = all_products[product_handle] %}
+                <div class="product-item">
+                  <a href="{{ product_obj.url }}">
+                    <img src="{{ product_obj.featured_image | image_url: width: 500 }}" alt="{{ product_obj.title }}">
+                    <h3>{{ product_obj.title }}</h3>
+                    <p>{{ product_obj.metafields.custom.product_intro | strip_html | truncatewords: 20 }}</p>
+                    <span>{{ product_obj.price | money }}</span>
+                  </a>
+                </div>
+              {% endif %}
+            {% endfor %} 
+          </div>
+        </div>
+    </div>
+
+</section>
+
+{% schema %}
+  {
+    "name": "Featured Products",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "section_title",
+        "label": "Section Title"
+      },
+      {
+        "type": "textarea",
+        "id": "section_subheading",
+        "label": "Section Subheading"
+      },
+      {
+        "type": "product",
+        "id": "product_1",
+        "label": "Product 1"
+      },
+      {
+        "type": "product",
+        "id": "product_2",
+        "label": "Product 2"
+      },
+      {
+        "type": "product",
+        "id": "product_3",
+        "label": "Product 3"
+      },
+      {
+        "type": "product",
+        "id": "product_4",
+        "label": "Product 4"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Products",
+        "category": "Custom" 
+      }
+    ]
+  }
+{% endschema %}

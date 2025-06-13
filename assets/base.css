@@ -82,6 +82,18 @@
   padding: 0 1.5rem;
 }
 
+.page-width--narrow {
+  max-width: var(--page-width-narrow);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.page-width--wide {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
 }
@@ -3595,3 +3607,4 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+

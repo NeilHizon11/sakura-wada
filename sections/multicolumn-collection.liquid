@@ -1,0 +1,86 @@
+{% style %}
+.multicolumn-collection__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.multicolumn-collection__box {
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+}
+{% endstyle %}
+
+<section>
+    <div class="page-width--wide">
+        <div class="multicolumn-collection__container">
+            {% assign coll_1 = section.settings.collection_1 %}
+            <div class="multicolumn-collection__box" style="background-image: url('{{ coll_1.image | image_url: width: 2048 }}'); background-size: cover; background-position: center;">
+                <p class="multicolumn-collection__subheading">{{ coll_1.metafields.custom.collection_subheading | default: "No subheading" }}</p>
+                <h2 class="multicolumn-collection__heading">{{ coll_1.metafields.custom.collection_heading | default: "No heading" }}</h2>
+                <button class="multicolumn-collection__button">
+                    <a href="{{ coll_1.url }}" class="multicolumn-collection__button-link">
+                        VIEW PRODUCTS
+                    </a>
+                </button>
+            </div>
+             {% assign coll_2 = section.settings.collection_2 %}
+            <div class="multicolumn-collection__box" style="background-image: url('{{ coll_2.image | image_url: width: 2048, height: 2048 }}'); background-size: cover; background-position: center;">
+                <p class="multicolumn-collection__subheading">{{ coll_2.metafields.custom.collection_subheading }}</p>
+                <h2 class="multicolumn-collection__heading">{{ coll_2.metafields.custom.collection_heading }}</h2>
+                <button class="multicolumn-collection__button">
+                    <a href="{{ coll_2.url }}   " class="multicolumn-collection__button-link">
+                        VIEW PRODUCTS
+                    </a>
+                </button>
+            </div>
+            {% assign coll_3 = section.settings.collection_3 %}
+            <div class="multicolumn-collection__box" style="background-image: url('{{ coll_3.image | image_url: width: 2048, height: 2048 }}'); background-size: cover; background-position: center;">
+                <p class="multicolumn-collection__subheading">{{ coll_3.metafields.custom.collection_subheading }}</p>
+                <h2 class="multicolumn-collection__heading">{{ coll_3.metafields.custom.collection_heading }}</h2>
+                <button class="multicolumn-collection__button">
+                    <a href="{{ coll_3.url }}   " class="multicolumn-collection__button-link">
+                        VIEW PRODUCTS
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Multicolumn Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection 1"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection 2"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multicolumn Collection",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

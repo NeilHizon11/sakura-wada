@@ -1,75 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+    "hero_section_CUXKYk": {
+      "type": "hero-section",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "hero_title": "Love yourself, care yourself.",
+        "hero_subtitle": "Bring the power of medicinal foods into your daily life. Self-care items to help you love and cherish yourself.",
+        "button_text": "Start your physical diagnosis",
+        "button_text_2": "view all products",
+        "hero_image": "shopify://shop_images/top_resize_1600_1000x_00c267b0-695b-41f7-a808-3f3bdbe54719.webp"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "featured_products_LfB9yH": {
+      "type": "featured-products",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "section_title": "<h2><strong>A bath additive made with a rich blend of Japanese and Chinese herbs based on traditional Chinese medicine.</strong></h2>",
+        "section_subheading": "Enrich your daily bath time",
+        "product_1": "onsen-diary",
+        "product_2": "onsen-diary",
+        "product_3": "onsen-diary",
+        "product_4": "onsen-diary"
+      }
+    },
+    "page_with_image_custom_RmgLHr": {
+      "type": "page-with-image__custom",
+      "settings": {
+        "image": "shopify://shop_images/subscription_resize_1600_1200x_c907617c-d402-4fea-a1a4-731cef32b3f3.webp",
+        "heading": "<p>Great value subscription</p>",
+        "text": "SAKURA WADA offers a subscription option to make self-care a habit easier. You always get a 5% discount, free shipping, no minimum order, and you can freely change the frequency, skip, or change any other settings on your My Page.",
+        "button_text": "Learn More",
+        "button_url": "/",
+        "image_width": "900"
+      }
+    },
+    "multicolumn_collection_DEyfFt": {
+      "type": "multicolumn-collection",
+      "settings": {
+        "collection_1": "bathing-fee",
+        "collection_2": "body-type-series",
+        "collection_3": "purpose-specific-series"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero_section_CUXKYk",
+    "featured_products_LfB9yH",
+    "page_with_image_custom_RmgLHr",
+    "multicolumn_collection_DEyfFt"
   ]
 }

@@ -1,0 +1,90 @@
+{%  style %}
+  .page-with-image__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 20px;
+  }
+
+    .page-with-image__image {
+        width: {{ section.settings.image_width | default: 500 }}px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+
+
+  .page-with-image__content-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+{% endstyle %}
+
+
+<section id="page-with-image__uid--{{ section.id }}" class="page-with-image">
+    <div class="container page-with-image__container">
+        <div class="page-with-image__row">
+            <div class="page-with-image__image">
+                <img src="{{ section.settings.image | image_url: width: 2048, height: 2048 }}" alt="{{ section.settings.heading }}" class="page-with-image__image" loading="lazy">
+            </div>
+
+            <div class="page-with-image__content">
+                <div class="page-with-image__content-container">
+                    <h2 class="page-with-image__heading">{{ section.settings.heading }}</h2>
+                    <p class="page-with-image__text">{{ section.settings.text }}</p>
+                    <a href="{{ section.settings.button_url }}" class="button page-with-image__button">{{ section.settings.button_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%  schema %}
+{
+    "name": "Page with Image Custom",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "richtext",
+            "id": "heading",
+            "label": "Heading",
+            "default": "<p>Your Heading Here</p>"
+        },
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "Your text goes here."
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Learn More"
+        },
+        {
+            "type": "text",
+            "id": "button_url",
+            "label": "Button URL",
+            "default": "/"
+        },
+        {
+            "type": "text",
+            "id": "image_width",
+            "label": "Image Width (px)",
+            "default": "600",
+        }
+    ],
+    "presets": [
+        {
+            "name": "Page with Image Custom"
+        }
+    ]
+}
+{% endschema %}
