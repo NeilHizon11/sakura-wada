@@ -3,15 +3,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    height: 80vh;
     gap: 20px;
   }
 
-    .page-with-image__image {
-        width: {{ section.settings.image_width | default: 500 }}px;
-        max-height: 500px;
-        object-fit: cover;
-    }
+  .page-with-image__image {
+    width: {{ section.settings.image_width | default: 50 }}%;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+
+  .page-with-image-image {
+    object-fit: cover;
+    width: 100%;
+  }
 
 
 
@@ -27,7 +32,7 @@
     <div class="container page-with-image__container">
         <div class="page-with-image__row">
             <div class="page-with-image__image">
-                <img src="{{ section.settings.image | image_url: width: 2048, height: 2048 }}" alt="{{ section.settings.heading }}" class="page-with-image__image" loading="lazy">
+                <img src="{{ section.settings.image | image_url: width: 2048, height: 2048 }}" alt="{{ section.settings.heading }}" class="page-with-image-image" loading="lazy">
             </div>
 
             <div class="page-with-image__content">
@@ -77,8 +82,8 @@
         {
             "type": "text",
             "id": "image_width",
-            "label": "Image Width (px)",
-            "default": "600",
+            "label": "Image Width (%)",
+            "default": "50",
         }
     ],
     "presets": [

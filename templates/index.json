@@ -16,37 +16,37 @@
         "hero_subtitle": "Bring the power of medicinal foods into your daily life. Self-care items to help you love and cherish yourself.",
         "button_text": "Start your physical diagnosis",
         "button_text_2": "view all products",
-        "hero_image": "shopify://shop_images/top_resize_1600_1000x_00c267b0-695b-41f7-a808-3f3bdbe54719.webp"
+        "hero_image": "shopify://shop_images/yuka-sue-22gaGos_Z5E-unsplash.jpg"
       }
     },
     "featured_products_LfB9yH": {
       "type": "featured-products",
       "settings": {
-        "section_title": "<h2><strong>A bath additive made with a rich blend of Japanese and Chinese herbs based on traditional Chinese medicine.</strong></h2>",
-        "section_subheading": "Enrich your daily bath time",
-        "product_1": "onsen-diary",
-        "product_2": "onsen-diary",
-        "product_3": "onsen-diary",
-        "product_4": "onsen-diary"
+        "section_title": "<h2><strong><br/>Soothing teas blended with purpose to help restore your energy, beauty, and balance naturally<br/><br/></strong></h2>",
+        "section_subheading": "Settle into calm moments, one steep at a time",
+        "product_1": "moon-petal",
+        "product_2": "bloom-within",
+        "product_3": "serenitea",
+        "product_4": "harmoni"
       }
     },
     "page_with_image_custom_RmgLHr": {
       "type": "page-with-image__custom",
       "settings": {
-        "image": "shopify://shop_images/subscription_resize_1600_1200x_c907617c-d402-4fea-a1a4-731cef32b3f3.webp",
+        "image": "shopify://shop_images/oriento-gy_DN08336U-unsplash.jpg",
         "heading": "<p>Great value subscription</p>",
-        "text": "SAKURA WADA offers a subscription option to make self-care a habit easier. You always get a 5% discount, free shipping, no minimum order, and you can freely change the frequency, skip, or change any other settings on your My Page.",
+        "text": "Sakura Rituals makes your self-care journey seamless with a flexible subscription.\nEnjoy 5% off every order, free shipping, and no minimum purchase — always.\nCustomize your delivery schedule, skip shipments, or update your preferences anytime through your account.",
         "button_text": "Learn More",
         "button_url": "/",
-        "image_width": "900"
+        "image_width": "60"
       }
     },
     "multicolumn_collection_DEyfFt": {
       "type": "multicolumn-collection",
       "settings": {
-        "collection_1": "bathing-fee",
-        "collection_2": "body-type-series",
-        "collection_3": "purpose-specific-series"
+        "collection_1": "beauty-glow",
+        "collection_2": "🌙-calm-sleep",
+        "collection_3": "☀️-energy-focus"
       }
     }
   },
