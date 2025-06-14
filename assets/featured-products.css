@@ -5,6 +5,8 @@
 .productItem_wrapper {
     display: flex;
     gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .featured-products__container {
