@@ -1,0 +1,85 @@
+{% style %}
+
+.footer-custom-content {
+    display: flex;
+    padding: 50px 100px;
+    border-top: 1px solid #c0c0c0;
+    margin-top: 50px;
+}
+
+.content-column__container {
+    width: 33.33%;
+}
+
+{% endstyle %}
+
+<section id="footer-custom__{{ section.id }}" class="footer-custom-section">
+  <div class="footer-custom-content">
+    <div class="content-column__container">
+      <div class="column__box">
+        <p>{{ section.settings.footer_about_heading }}</p>
+        <p>{{ section.settings.footer_about_text }}</p>
+      </div>
+    </div>
+    <div class="content-column__container">
+      <div class="column__box">
+        <ul class="footer-menu">
+          {% for link in linklists[section.settings.footer_menu].links %}
+            <li>
+              <a href="{{ link.url }}" class="footer-menu-link">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="content-column__container">
+      <div class="column__box">
+        <p>Contact us at: <a href="mailto:{{ section.settings.footer_contact_email }}">{{ section.settings.footer_contact_email }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Footer Custom",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "footer_about_heading",
+      "label": "About Text Heading",
+      "default": "<p>About Sakura Rituals</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "footer_about_text",
+      "label": "About Text",
+      "default": "Sakura Rituals is a quiet invitation to reconnect with yourself. In a world that moves quickly, we believe in slowing down — listening inward, nurturing gently, and finding clarity in stillness. True wellness begins when you honor your own rhythm. We’re here to offer small daily rituals that support your journey — as you grow, evolve, and rediscover yourself, again and again. A companion not just for your health, but for your whole being."
+    },
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer Menu"
+    },
+    {
+      "type": "text",
+      "id": "footer_contact_email",
+      "label": "Contact Email",
+      "default": "NEWSLETTER"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer Text",
+      "default": "© 2024 Your Store Name. All rights reserved."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer Custom",
+      "category": "Custom"
+    }
+  ],
+}
+{% endschema %}

@@ -1,13 +1,13 @@
 {%  style %}
-  .page-with-image__row {
+  #page-with-image__uid--{{ section.id }} .page-with-image__row {
     display: flex;
-    flex-direction: row;
+    flex-direction: {% if section.settings.enable_row_reverse %}row-reverse{% else %}row{% endif %};
     align-items: center;
     height: 80vh;
     gap: 20px;
   }
 
-  .page-with-image__image {
+  #page-with-image__uid--{{ section.id }} .page-with-image__image {
     width: {{ section.settings.image_width | default: 50 }}%;
     max-height: 80vh;
     overflow: hidden;
@@ -24,6 +24,10 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 {% endstyle %}
 
@@ -83,7 +87,13 @@
             "type": "text",
             "id": "image_width",
             "label": "Image Width (%)",
-            "default": "50",
+            "default": "50"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_row_reverse",
+            "label": "Reverse Row Layout",
+            "default": false
         }
     ],
     "presets": [
