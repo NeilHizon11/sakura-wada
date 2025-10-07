@@ -23,6 +23,43 @@
     </div>
 </section>
 
+<script>
+  // Replace with your own Unsplash API Access Key
+  const UNSPLASH_ACCESS_KEY = "J6gErG68mZTISFh5RMMNo9pituuMiCeVgxd35Zy8vdY";
+
+  // Function to load a random image
+  function loadRandomImage() {
+    $.ajax({
+      url: "https://api.unsplash.com/photos/random",
+      method: "GET",
+      headers: {
+        Authorization: "Client-ID " + UNSPLASH_ACCESS_KEY
+      },
+      success: function (data) {
+        // Get the image URL (you can use full, regular, small, etc.)
+        const imageUrl = data.urls.regular;
+
+        // Replace the <img> inside .header-image-wrapper
+        $(".header-image-wrapper img").attr("src", imageUrl);
+      },
+      error: function (err) {
+        console.error("Error fetching image:", err);
+      }
+    });
+  }
+
+  // Load image on page load
+  $(document).ready(function () {
+    loadRandomImage();
+
+    // Optional: Refresh image on button click
+    $("#refresh-image").click(function () {
+      loadRandomImage();
+    });
+  });
+</script>
+
+
 
 {%  schema  %} 
 {
