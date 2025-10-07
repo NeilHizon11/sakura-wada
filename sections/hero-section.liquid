@@ -10,7 +10,10 @@
                         {{ section.settings.button_text }}
                     </button>
                     <button class="button-negative">
-                        {{ section.settings.button_text }}
+                        {{ section.settings.button_text_2 }}
+                    </button>
+                    <button id="refresh-image" class="button-refresh">
+                        Refresh Image
                     </button>
                 </div>
             </div>
@@ -20,9 +23,8 @@
             <img src="{{ section.settings.hero_image | image_url: width: 1500 }}" alt="Hero Image" class="hero-image" />
             </div>
         </div>
-    </div>
-</section>
-
+<!-- Ensure jQuery is loaded before this script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   // Replace with your own Unsplash API Access Key
   const UNSPLASH_ACCESS_KEY = "J6gErG68mZTISFh5RMMNo9pituuMiCeVgxd35Zy8vdY";
@@ -37,10 +39,11 @@
       },
       success: function (data) {
         // Get the image URL (you can use full, regular, small, etc.)
-        const imageUrl = data.urls.regular;
-
-        // Replace the <img> inside .header-image-wrapper
-        $(".header-image-wrapper img").attr("src", imageUrl);
+        const imageUrl = data.urls && data.urls.regular ? data.urls.regular : "";
+        if (imageUrl) {
+          // Replace the <img> inside .header-image-wrapper
+          $(".header-image-wrapper img").attr("src", imageUrl);
+        }
       },
       error: function (err) {
         console.error("Error fetching image:", err);
@@ -52,8 +55,9 @@
   $(document).ready(function () {
     loadRandomImage();
 
-    // Optional: Refresh image on button click
-    $("#refresh-image").click(function () {
+    // Refresh image on button click
+    $("#refresh-image").on("click", function (e) {
+      e.preventDefault();
       loadRandomImage();
     });
   });
