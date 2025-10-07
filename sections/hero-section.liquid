@@ -29,6 +29,11 @@
 <script>
   const UNSPLASH_ACCESS_KEY = "J6gErG68mZTISFh5RMMNo9pituuMiCeVgxd35Zy8vdY";
 
+  // Hide the image initially
+  $(document).ready(function () {
+    $(".header-image-wrapper img").css({ opacity: 0, visibility: "hidden" });
+  });
+
   function loadRandomImage() {
     $.ajax({
       url: "https://api.unsplash.com/photos/random",
@@ -39,7 +44,14 @@
       success: function (data) {
         const imageUrl = data.urls && data.urls.regular ? data.urls.regular : "";
         if (imageUrl) {
-          $(".header-image-wrapper img").attr("src", imageUrl);
+          const $img = $(".header-image-wrapper img");
+          $img.css({ opacity: 0, visibility: "hidden" });
+          $img.attr("src", imageUrl);
+          // Wait for the image to load before fading in
+          $img.on("load", function () {
+            $img.off("load"); // Remove handler to avoid multiple triggers
+            $img.css({ visibility: "visible" }).animate({ opacity: 1 }, 600);
+          });
         }
       },
       error: function (err) {
