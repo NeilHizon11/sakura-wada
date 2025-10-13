@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,10 +25,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_liquid_nB99Na": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".contact-grid {display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;}",
+        ".contact-info h2 {margin-top: 1.5rem;}",
+        ".contact-list {list-style: none; padding: 0; margin: 0 0 1.5rem 0;}",
+        ".contact-list li {align-items: center; gap: 0.6rem; padding: 0.75rem 0;}",
+        ".contact-list li:last-child {border-bottom: none;}",
+        ".contact-list img {width: 20px; height: 20px;}",
+        "@media (max-width: 768px) {.contact-grid {grid-template-columns: 1fr; }}"
+      ],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"contact-section page-width\">\n  <div class=\"contact-grid\">\n    \n    <!-- Left Column - Contact Form -->\n    <div class=\"contact-form-wrapper\">\n   <div class=\"globo-formbuilder\" data-id=\"MTEzNTU5\"></div>\n\n    </div>\n\n    <div class=\"contact-info\">\n      <h2>To serve our customers quickly<br> and efficiently, we operate with:</h2>\n<br>\n      <ul class=\"contact-list\">\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/contact-location.svg?v=1758909501\" alt=\"Location icon\" />\n          Sales and Customer Service Headquarters in Utah\n        </li>\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/contact-location.svg?v=1758909501\" alt=\"Location icon\" />\n          Main Fulfillment Center in Illinois\n        </li>\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/contact-location.svg?v=1758909501\" alt=\"Location icon\" />\n          Additional warehouses nationwide for fast, reliable shipping\n        </li>\n      </ul>\n\n      <h2>Let’s Connect</h2>\n      <p>Our team is here to answer questions and provide support.</p>\n      <ul class=\"contact-list\">\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/contact-call.svg?v=1758909479\" alt=\"Call icon\" />\n          Utah: 1-801-417-9834\n        </li>\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/contact-message.png?v=1758909489\" alt=\"Chat icon\" />\n          Text: 1-801-417-9834\n        </li>\n        <li>\n          <img src=\"https://cdn.shopify.com/s/files/1/0745/1666/0455/files/email-icon.svg?v=1758909563\" alt=\"Email icon\" />\n          support@candymachines.com\n        </li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n\n <!-- Left Column - Contact Form -->",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "custom_liquid_nB99Na"
   ]
 }
