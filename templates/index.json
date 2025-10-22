@@ -19,6 +19,16 @@
         "hero_image": "shopify://shop_images/yuka-sue-22gaGos_Z5E-unsplash.jpg"
       }
     },
+    "custom_liquid_bjhx4K": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_products_LfB9yH": {
       "type": "featured-products",
       "settings": {
@@ -38,7 +48,8 @@
         "text": "Sakura Rituals makes your self-care journey seamless with a flexible subscription.\nEnjoy 5% off every order, free shipping, and no minimum purchase — always.\nCustomize your delivery schedule, skip shipments, or update your preferences anytime through your account.",
         "button_text": "Learn More",
         "button_url": "/",
-        "image_width": "60"
+        "image_width": "60",
+        "enable_row_reverse": false
       }
     },
     "multicolumn_collection_DEyfFt": {
@@ -48,12 +59,24 @@
         "collection_2": "🌙-calm-sleep",
         "collection_3": "☀️-energy-focus"
       }
+    },
+    "custom_liquid_tRdcxj": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "hero_section_CUXKYk",
+    "custom_liquid_bjhx4K",
     "featured_products_LfB9yH",
     "page_with_image_custom_RmgLHr",
-    "multicolumn_collection_DEyfFt"
+    "multicolumn_collection_DEyfFt",
+    "custom_liquid_tRdcxj"
   ]
 }
