@@ -19,14 +19,13 @@
         "hero_image": "shopify://shop_images/yuka-sue-22gaGos_Z5E-unsplash.jpg"
       }
     },
-    "custom_liquid_bjhx4K": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
+    "custom_form_Eg9the": {
+      "type": "custom-form",
+      "name": "Easy Return Form",
       "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "form_title": "Easy Returns",
+        "form_description": "",
+        "hide_phone_field": false
       }
     },
     "featured_products_LfB9yH": {
@@ -73,7 +72,7 @@
   },
   "order": [
     "hero_section_CUXKYk",
-    "custom_liquid_bjhx4K",
+    "custom_form_Eg9the",
     "featured_products_LfB9yH",
     "page_with_image_custom_RmgLHr",
     "multicolumn_collection_DEyfFt",
