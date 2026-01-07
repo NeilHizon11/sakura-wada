@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_Dw4beP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class='TablePress' data-table='60066'></div>"
+          }
+        },
         "tablepress_size_chart_tablepress_product_a77f33": {
           "type": "shopify://apps/tablepress-size-chart/blocks/tablepress-product/0315ebd4-567b-4721-9e07-500c79914395",
           "settings": {}
@@ -62,6 +68,7 @@
         }
       },
       "block_order": [
+        "custom_liquid_Dw4beP",
         "tablepress_size_chart_tablepress_product_a77f33",
         "vendor",
         "title",
