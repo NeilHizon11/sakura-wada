@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "tablepress_size_chart_tablepress_product_a77f33": {
+          "type": "shopify://apps/tablepress-size-chart/blocks/tablepress-product/0315ebd4-567b-4721-9e07-500c79914395",
+          "settings": {}
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -57,6 +61,7 @@
         }
       },
       "block_order": [
+        "tablepress_size_chart_tablepress_product_a77f33",
         "vendor",
         "title",
         "price",
@@ -103,12 +108,17 @@
     "1767768230df77f801": {
       "type": "apps",
       "blocks": {
+        "tablepress_size_chart_tablepress_product_TkPEkx": {
+          "type": "shopify://apps/tablepress-size-chart/blocks/tablepress-product/0315ebd4-567b-4721-9e07-500c79914395",
+          "settings": {}
+        },
         "tablepress_size_chart_tablepress_product_dNprUy": {
           "type": "shopify://apps/tablepress-size-chart/blocks/tablepress-product/0315ebd4-567b-4721-9e07-500c79914395",
           "settings": {}
         }
       },
       "block_order": [
+        "tablepress_size_chart_tablepress_product_TkPEkx",
         "tablepress_size_chart_tablepress_product_dNprUy"
       ],
       "settings": {
