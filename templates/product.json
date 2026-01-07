@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_liquid_Dw4beP": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class='TablePress' data-table='60066'></div>"
-          }
-        },
         "tablepress_size_chart_tablepress_product_a77f33": {
           "type": "shopify://apps/tablepress-size-chart/blocks/tablepress-product/0315ebd4-567b-4721-9e07-500c79914395",
           "settings": {}
@@ -68,7 +62,6 @@
         }
       },
       "block_order": [
-        "custom_liquid_Dw4beP",
         "tablepress_size_chart_tablepress_product_a77f33",
         "vendor",
         "title",
@@ -93,6 +86,16 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "custom_liquid_a3NyCc": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class='TablePress' data-table='60066'></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -136,6 +139,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_a3NyCc",
     "related-products",
     "1767768230df77f801"
   ]
