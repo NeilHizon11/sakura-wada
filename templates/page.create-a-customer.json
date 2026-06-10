@@ -11,13 +11,25 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_gcqdyt": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n  .create-account-section__form-container {\n    max-width: 400px;\n    margin: 0 auto;\n  }\n</style>\n<div class=\"create-account-section__form-container\">\n\n<h1 class=\"create-account-section__form-heading\">\n  Create an Account\n</h1>\n\n<div class=\"create-account-section__form-text rte\">\n  <p>Create your customer account by entering your email address below.</p>\n</div>\n\n{%- form 'create_customer', novalidate: 'novalidate' -%}\n  {%- if form.errors -%}\n    <div class=\"form__message\" tabindex=\"-1\" autofocus>\n      {{ form.errors | default_errors }}\n    </div>\n  {%- endif -%}\n\n  <div class=\"create-account-section__field\">\n    <label\n      class=\"create-account-section__label\"\n      for=\"RegisterForm-email\"\n    >\n      Email address\n    </label>\n\n    <input\n      type=\"email\"\n      name=\"customer[email]\"\n      id=\"RegisterForm-email\"\n      class=\"create-account-section__input\"\n      spellcheck=\"false\"\n      autocapitalize=\"off\"\n      autocomplete=\"email\"\n      aria-required=\"true\"\n      placeholder=\"Email Address\"\n      value=\"{{ form.email }}\"\n      {% if form.errors contains 'email' %}\n        aria-invalid=\"true\"\n        aria-describedby=\"RegisterForm-email-error\"\n      {% endif %}\n    >\n\n    {%- if form.errors contains 'email' -%}\n      <small\n        id=\"RegisterForm-email-error\"\n        class=\"create-account-section__error\"\n      >\n        {{ form.errors.messages.email }}\n      </small>\n    {%- endif -%}\n  </div>\n\n  <button\n    type=\"submit\"\n    class=\"create-account-section__button\"\n  >\n    Create customer\n  </button>\n{%- endform -%}\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_gcqdyt"
   ]
 }
